@@ -46,7 +46,7 @@ export default function Chat({socket})
       messageRef.current.focus()
     }
 
-  const getEnterKey = (e) => 
+  const getEnterKey = (e) => // enviar mensagem ao pressionar enter
     {
       if(e.key === 'Enter')
         handleSubmit()
@@ -54,7 +54,7 @@ export default function Chat({socket})
   
   const scrollDown = () => 
     {
-      bottomRef.current.scrollIntoView({behavior: 'smooth'})
+      bottomRef.current.scrollIntoView({behavior: 'smooth'}) // scrollar para baixo quando enviar uma mensagem muito grande
     }
 
     return (
